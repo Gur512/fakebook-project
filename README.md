@@ -5,6 +5,12 @@
 
 ---
 
+## :computer: Live Demo
+
+Check out the live version of the website: [Fakebook](https://gur512.github.io/fakebook-project/)
+
+---
+
 ## 📄 Features
 
 
@@ -20,14 +26,8 @@
 ![Fakebook Feed](./assets/img/demo-project.png)  
 **Example of a post feed**.
 
-![Profile Modal](./assets/img/web-demo2.png)  
+![Profile Modal](./assets/img/model-demo.png)  
 **User profile modal displaying account info**.
-
----
-
-## :computer: Live Demo
-
-Check out the live version of the website: [Fakebook](https://github.com/Gur512/fakebook-project.git)
 
 ---
 
@@ -37,8 +37,7 @@ Check out the live version of the website: [Fakebook](https://github.com/Gur512/
 - **CSS3** - Styling and layout adjustments.
 - **JavaScript (ES6)** - Functionality for dynamic user interaction and post creation.
 
-![HTML5 Logo](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3 Logo](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) 
-![JavaScript Logo](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) 
+![HTML5 Logo](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3 Logo](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript Logo](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) 
 
 
 ---
@@ -50,16 +49,3 @@ Check out the live version of the website: [Fakebook](https://github.com/Gur512/
    git clone https://github.com/Gur512/fakebook-project.git
 
 This is a simple social network-like web page called Fakebook. Users can post text and images, and view user account information through a pop-up modal.
-<!-- # Fakebook Project
-
-## Features
-- Post text messages, images, or both.
-- Displays user information in a modal window.
-- Responsive design.
-
-## Classes
-- `User` and `Subscriber` classes with private properties and `getInfo` method.
-
-## Link to the Application
-[Fakebook on GitHub Pages](https://github.com/Gur512/fakebook-project.git)
- -->
