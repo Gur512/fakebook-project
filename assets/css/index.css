@@ -99,6 +99,7 @@ form {
 textarea {
   background-color: var(--app-gray-background-color);
   color: var(--app-white-text-color);
+  resize: none;
   height: 100px;
   padding: 10px;
   margin-bottom: 10px;
@@ -245,10 +246,12 @@ img.post-image {
   cursor: pointer;
   font-size: 1.2em;
 }
+
 .modal img {
   border-radius: 50%;
   margin-bottom: 10px;
-  width: 120px;
+  width: 150px;
+  height: 150px;
 }
 
 .modal h2 {
@@ -262,3 +265,4 @@ img.post-image {
 .modal.show {
   display: block;
 }
+

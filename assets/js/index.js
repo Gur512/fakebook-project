@@ -67,7 +67,7 @@ class Subscriber extends User {
     }
 }
 
-const user = new User('Gurpreet Kaur', 'gurpreet_kaur', 'gurpreet.kaur@example.com');
+const user = new Subscriber('Gurpreet Kaur', 'gurpreet_kaur', 'gurpreet.kaur@example.com', ['10'], ['10'], true);
 const subscriber = new Subscriber('Rahaf', 'rahaf_aein', 'rahaf.aein@example.com', ['Pages1'], ['Group1'], true);
 
 listen('submit', postForm, function (e) {
@@ -92,6 +92,15 @@ listen('submit', postForm, function (e) {
     }
 });
 
+function formatDate(){
+    const newDate = new Date().toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+    });
+    return newDate;
+}
+
 function createPostTemplate(content, imageFile) {
     // Clone the post template
     const template = select('#post-template');
@@ -102,17 +111,13 @@ function createPostTemplate(content, imageFile) {
     const postContent = select('.post-content', postClone);
 
     name.innerText = 'Gurpreet Kaur'; 
-    date.innerText = new Date().toLocaleDateString('en-US', {
-        month: 'short',
-        day: 'numeric',
-        year: 'numeric'
-    });
+    date.innerText = formatDate();
     postContent.innerText = content;
 
     if (imageFile) {
         const postImage = select('.post-image', postClone);
         postImage.src = URL.createObjectURL(imageFile);
-        postImage.style.display = 'block'; // Make the image visible
+        postImage.style.display = 'block'; 
     }
 
     return postClone;
@@ -141,4 +146,3 @@ listen('change', postImageInput, function () {
         fileInfo.innerText = '';
     }
 });
-
